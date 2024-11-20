@@ -11,7 +11,7 @@ public class LoginController {
     public String login(HttpServletRequest request) {
         // Verifica si el usuario está autenticado
         if (request.getUserPrincipal() != null) {
-            return "redirect:/index";
+            return "redirect:index.html";
         }
         return "login"; // Devuelve la vista de login si no está autenticado
     }
