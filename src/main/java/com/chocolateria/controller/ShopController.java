@@ -4,10 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class Index {
-    @GetMapping("/index.html")
-    public String index(){
+public class ShopController {
 
-        return "index.html";
+
+    @GetMapping("/shop.html")
+    public String shop() {return "shop.html";
     }
+
 }
