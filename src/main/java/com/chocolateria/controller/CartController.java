@@ -4,10 +4,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class Index {
-    @GetMapping("/index.html")
-    public String index(){
+public class CartController {
 
-        return "index.html";
+
+    @GetMapping("/cart.html")
+    public String cart() {
+        return "cart.html";
     }
+
 }
+

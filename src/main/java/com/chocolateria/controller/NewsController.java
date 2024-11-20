@@ -4,10 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class Index {
-    @GetMapping("/index.html")
-    public String index(){
+public class NewsController {
 
-        return "index.html";
+
+    @GetMapping("/news.html")
+    public String news() {
+        return "news.html";
     }
+
 }
